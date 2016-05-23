@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <style>
+* {
+  padding: 0;
+  margin: 0;
+}
+.title {
+  border:  1px solid black;
+  text-align: center;
+  margin: 20px;
+}
+.current_time {
+  border: 1px solid black;
+  margin: 20px;
+  list-style: none;
+  text-align: center;
+}
+  </style>
+  <title></title>
+</head>
+<body>
+  <div class="title">
+    {{ title }}
+  </div>
+  <ul class="current_time">
+    <li>{{ current_time.date }}</li>
+    <li>{{ current_time.time }}</li>
+  </ul>
+
+</body>
+</html>
